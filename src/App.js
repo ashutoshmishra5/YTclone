@@ -1,5 +1,5 @@
-import styled, { ThemeProvider } from "styled-components";
 import './App.css';
+import styled, { ThemeProvider } from "styled-components";
 import Menu from './components/Menu';
 import Navbar from './components/Navbar';
 import { darkTheme, lightTheme } from "./utils/Theme";
