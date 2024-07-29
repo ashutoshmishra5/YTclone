@@ -2,6 +2,7 @@ import React from "react";
 import styled from 'styled-components';
 import ytLogo from '../img/logo.png';
 import HomeIcon from '@mui/icons-material/Home';
+import { Link } from "react-router-dom";
 import ExploreOutlinedIcon from "@mui/icons-material/ExploreOutlined";
 import SubscriptionsOutlinedIcon from "@mui/icons-material/SubscriptionsOutlined";
 import VideoLibraryOutlinedIcon from "@mui/icons-material/VideoLibraryOutlined";
@@ -87,10 +88,12 @@ function Menu({darkMode, setDarkMode}) {
   return (
     <Container>
         <Wrapper>
-            <Logo>
-                <Img src={ytLogo}/>
-                YouTube
-            </Logo>
+            <Link to="/"style={{textDecoration:"none",color:"inherit"}}>
+                <Logo>
+                    <Img src={ytLogo}/>
+                    YouTube
+                </Logo>
+            </Link>
             <Item>
                 <HomeIcon/>
                 Home

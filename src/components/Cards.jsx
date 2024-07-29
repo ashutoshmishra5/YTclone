@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { Link } from "react-router-dom";
 
 const Container = styled.div`
 width: 300px;
@@ -48,6 +49,7 @@ color: ${({theme})=> theme.textSoft};
 function Cards() {
     return (
         <Container>
+            <Link to="/video/test" style={{textDecoration:"none"}}>
             <Image src="https://wallpapercave.com/wp/wp5984937.jpg"/>
             <Details>
                 <ChannelImage src="https://wallpapercave.com/wp/wp5984937.jpg"/>
@@ -57,7 +59,7 @@ function Cards() {
                 <Info>98,124 views  30 Jun 2022</Info>
                 </Texts>
             </Details>
-            
+            </Link>
         </Container>  
     );
     }
