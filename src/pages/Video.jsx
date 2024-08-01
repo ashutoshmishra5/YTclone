@@ -4,6 +4,8 @@ import ThumbDownOffAltOutlinedIcon from "@mui/icons-material/ThumbDownAltOutline
 import ReplyOutlinedIcon from "@mui/icons-material/ReplyOutlined";
 import AddTaskOutlinedIcon from "@mui/icons-material/AddTaskOutlined";
 import Comments from "../components/Comments";
+import Cards from "../components/Cards"
+
 const Container = styled.div`
 display:flex;
 gap:24px;`;
@@ -87,9 +89,9 @@ height: max-content;
 padding: 10px 20px;
 cursor: pointer;
 `;
-
 const Recomendation = styled.div`
 flex:2;`;
+
 function Video() {
     return (
         <Container>
@@ -131,7 +133,21 @@ function Video() {
           <Hr/>
         <Comments/>  
         </Content>
-        <Recomendation>Recomendation</Recomendation>
+        <Recomendation>
+          <Cards type="sm"/>
+          <Cards type="sm"/>
+          <Cards type="sm"/>
+          <Cards type="sm"/>
+          <Cards type="sm"/>
+          <Cards type="sm"/>
+          <Cards type="sm"/>
+          <Cards type="sm"/>
+          <Cards type="sm"/>
+          <Cards type="sm"/>
+          <Cards type="sm"/>
+          <Cards type="sm"/>
+          <Cards type="sm"/>
+        </Recomendation>
         </Container>
     );
   }
